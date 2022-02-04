@@ -198,8 +198,8 @@ ul {
   text-align: center;
   color: var(--first-title-color);
   margin-bottom: 30px;
-  margin-left: 252px;
-  margin-right: 252px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .hero__btn {
