@@ -26,6 +26,7 @@
 
 .header__list {
   display: flex;
+  display: none;
 }
 
 .header__item:not(:last-child) {
@@ -65,6 +66,7 @@
 .header__connect {
   margin-left: auto;
   display: flex;
+  display: none;
 }
 
 .envelope {
@@ -106,4 +108,16 @@
 
 .header__link-mail {
   margin-right: 30px;
+}
+
+.mob-menu {
+  position: fixed;
+  // position: absolute;
+  background-color: #ffffff;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vw;
+  padding-bottom: 48px;
+  padding-top: 48px;
 }
