@@ -507,9 +507,8 @@ ul {
 @media screen and (min-width: 768px) {
   .team__card {
     width: 354px;
-    flex-wrap: wrap;
   }
-  .team__card:not(:last-child) {
+  .team__card:not(:nth-child(2n + 2)) {
     margin-right: 30px;
   }
 }
@@ -517,6 +516,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .team__card {
     width: 270px;
+    margin-top: 0;
   }
   .team__card:not(:last-child) {
     margin-right: 30px;
@@ -667,8 +667,8 @@ ul {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -676,6 +676,13 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-icon {
@@ -780,16 +787,21 @@ ul {
 }
 
 .form-field {
-  padding-left: 12px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-field {
+    padding-left: 12px;
+  }
 }
 
 .checkbox__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
@@ -805,6 +817,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+  }
 }
 
 .checkbox-text-color {
@@ -832,9 +850,16 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: 84px;
+  margin-right: 84px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__btn {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .portfolio__section {
