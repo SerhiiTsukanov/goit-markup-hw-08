@@ -1,9 +1,9 @@
 .activity {
   display: none;
-  background-color: var(--first-title-color);
-  padding-bottom: 94px;
   @media screen and (min-width: 1200px) {
     display: initial;
+    background: #ffffff;
+    padding-bottom: 94px;
   }
 }
 
