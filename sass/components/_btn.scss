@@ -23,8 +23,12 @@
   border: none;
   min-width: 200px;
   min-height: 50px;
-  margin-right: 500px;
-  margin-left: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  // margin-right: 500px;
+  // margin-left: 500px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: #188ce8;

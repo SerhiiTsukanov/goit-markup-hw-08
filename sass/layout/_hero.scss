@@ -11,7 +11,9 @@
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
-  @include desk {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -31,7 +33,9 @@
   text-align: center;
   color: var(--first-title-color);
   margin-bottom: 30px;
-  @include desk {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
     width: 696px;
     height: 120px;
     font-size: 44px;
