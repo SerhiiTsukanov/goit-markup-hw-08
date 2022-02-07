@@ -355,8 +355,15 @@ ul {
 }
 
 .activity {
+  display: none;
   background-color: var(--first-title-color);
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: initial;
+  }
 }
 
 .activity__title {
@@ -400,17 +407,50 @@ ul {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+  width: 100%;
   background: #ffffff;
+  position: absolute;
+  justify-content: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: initial;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: initial;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__title {
+    flex-wrap: wrap;
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -418,17 +458,32 @@ ul {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    margin-bottom: 30px;
+  }
+  .clients__item:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .clients__item + .clients__item {
   justify-content: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__link {
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -445,6 +500,20 @@ ul {
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__icon {
