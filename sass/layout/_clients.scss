@@ -1,17 +1,11 @@
 .clients {
-  display: none;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #ffffff;
   position: absolute;
   justify-content: center;
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: initial;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   @media screen and (min-width: 1200px) {
-    display: initial;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -20,11 +14,11 @@
 .clients__title {
   text-align: center;
   letter-spacing: 0.03em;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
     font-size: 28px;
     line-height: 1.18;
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
@@ -35,18 +29,19 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-  }
 }
 
 .clients__item {
+  margin-bottom: 30px;
+  &:not(:nth-child(2n + 2)) {
+    margin-right: 30px;
+  }
   @media screen and (min-width: 768px) {
     &:not(:nth-child(3n + 3)) {
       margin-right: 30px;
     }
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
@@ -60,6 +55,8 @@
 }
 
 .clients__link {
+  width: 210px;
+  height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -77,11 +74,9 @@
   }
   @media screen and (min-width: 768px) {
     width: 226px;
-    height: 92px;
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 92px;
   }
 }
 
