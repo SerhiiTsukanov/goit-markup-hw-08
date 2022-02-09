@@ -206,7 +206,46 @@ ul {
   width: 100vw;
   height: 100vw;
   padding-bottom: 48px;
-  padding-top: 48px;
+  padding-top: 21px;
+  padding-left: 40px;
+  padding-right: 25px;
+  z-index: 1;
+}
+
+.mob-menu__item {
+  padding-bottom: 35px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.05;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu__link-tel {
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-bottom: 32px;
+}
+
+.mob-menu__link-mail {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 124px;
+}
+
+.mob-menu__social-list {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .hero {
@@ -287,6 +326,12 @@ ul {
 
 .menu-open-btn:hover {
   fill: var(--accent-color);
+}
+
+@media (min-width: 480px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .hero__btn {

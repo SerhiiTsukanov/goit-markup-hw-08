@@ -119,6 +119,40 @@
   width: 100vw;
   height: 100vw;
   padding-bottom: 48px;
-  padding-top: 48px;
-  // z-index: 1;
+  padding-top: 21px;
+  padding-left: 40px;
+  padding-right: 25px;
+  z-index: 1;
+  &__item {
+    padding-bottom: 35px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.05;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  &__link-tel {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+
+    padding-bottom: 32px;
+  }
+  &__link-mail {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-bottom: 124px;
+  }
+  &__social-list {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }
