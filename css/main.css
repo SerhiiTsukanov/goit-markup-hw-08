@@ -688,11 +688,16 @@ ul {
   margin-bottom: 30px;
 }
 
-.clients__item:not(:nth-child(2n + 2)) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .clients__item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
   .clients__item:not(:nth-child(3n + 3)) {
     margin-right: 30px;
   }
@@ -1461,7 +1466,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__btn {
     padding-top: 48px;
-    margin-left: 12px;
+    margin-right: 0;
   }
 }
 
