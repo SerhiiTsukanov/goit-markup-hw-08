@@ -25,11 +25,14 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-color);
+}
+
+.header-nav {
   @media screen and (min-width: 768px) {
-    margin-right: 88px;
+    margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    margin-left: 93px;
   }
 }
 
