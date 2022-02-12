@@ -11,7 +11,7 @@
 }
 
 .work__item {
-  width: 370px;
+  width: 450px;
   height: 404px;
   border: 1px solid #eeeeee;
   &:nth-child(-n + 6) {
@@ -24,12 +24,15 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:not(:nth-child(3n + 3)) {
-    margin-right: 30px;
-  }
+
   @media screen and (min-width: 768px) {
+    width: 354px;
   }
   @media screen and (min-width: 1200px) {
+    width: 370px;
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 30px;
+    }
   }
 }
 

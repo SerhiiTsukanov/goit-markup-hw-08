@@ -195,7 +195,24 @@
                 <h2 class="team__title">Наша команда</h2>
                     <ul class="list team__list">
                         <li class="team__card">
-                            <img src="./images/productdesigner.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/productdesigner-1x.jpg 1x
+                                                ./images/productdesigner-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                <source srcset="./images/productdesigner-tab-1x.jpg 1x,
+                                                ./images/productdesigner-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                <source srcset="./images/productdesigner-mob-1x.jpg 1x
+                                                ./images/productdesigner-mob-2x.jpg 2x"
+                                        media="(min-width: 320px)" />
+                                <img src="./images/productdesigner-1x.jpg" alt="Игорь Демьяненко" />
+                            </picture>
+                            <!-- <img srcset="./images/productdesigner-mob-1x.jpg 1x
+                            ./images/productdesigner-mob-2x.jpg 2x"
+                            src="./images/productdesigner-mob-1x.jpg"
+                            alt="Игорь Демьяненко" width="450" height="460"
+                            media="(min-width: 480px)"
+                            /> -->
                                 <div class="team__info">
                                 <p class="team__name">Игорь Демьяненко</p> 
                                 <p class="team__position" lang="en">Product Designer</p>
@@ -232,7 +249,11 @@
                                 </div>
                         </li>
                         <li class="team__card">
-                            <img src="./images/frontenddeveloper.jpg" alt="Ольга Репина" width="270" height="260">
+                            <img srcset="./images/frontenddeveloper-mob-1x.jpg 1x
+                            ./images/frontenddeveloper-mob-2x.jpg 2x"
+                            src="./images/frontenddeveloper-mob-1x.jpg"
+                            alt="Ольга Репина" width="450" height="460" media="(min-width: 480px)"
+                            />
                                 <div class="team__info">
                                 <p class="team__name">Ольга Репина</p> 
                                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -269,14 +290,18 @@
                                 </div>
                         </li>
                         <li class="team__card">
-                            <img src="./images/marketing.jpg" alt="Николай Тарасов" width="270" height="260">
+                            <img srcset="./images/marketing-mob-1x.jpg 1x
+                            ./images/marketing-mob-2x.jpg 2x"
+                            src="./images/marketing-mob-1x.jpg"
+                            alt="Николай Тарасов" width="450" height="460" media="(min-width: 480px)"
+                            />
                                 <div class="team__info">
                                 <p class="team__name">Николай Тарасов</p>
                                 <p class="team__position" lang="en">Marketing</p>
                                 <ul class="list team__social-list">
                                     <li class="team__social-item">
-                                        <a href="" class="team__social-link ">
-                                            <svg class="team__social-icon ">
+                                        <a href="" class="team__social-link">
+                                            <svg class="team__social-icon">
                                                 <use href="./images/icons.svg#icon-instagram"></use>
                                             </svg>
                                         </a>
@@ -306,7 +331,11 @@
                                 </div>
                         </li>
                         <li class="team__card">
-                            <img src="./images/uidesigner.jpg" alt="Михаил Ермаков" width="270" height="260">
+                            <img srcset="./images/uidesigner-mob-1x.jpg 1x
+                            ./images/uidesigner-mob-2x.jpg 2x"
+                            src="./images/uidesigner-mob-1x.jpg"
+                            alt="Михаил Ермаков" width="450" height="460" media="(min-width: 480px)"
+                            />
                                 <div class="team__info">
                                 <p class="team__name">Михаил Ермаков</p>
                                 <p class="team__position" lang="en">UI Desidivner</p>
