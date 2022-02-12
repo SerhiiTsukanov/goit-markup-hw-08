@@ -1,6 +1,13 @@
 .work__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .work__item {
@@ -19,6 +26,10 @@
   }
   &:not(:nth-child(3n + 3)) {
     margin-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 
