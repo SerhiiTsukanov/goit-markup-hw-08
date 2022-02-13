@@ -7,7 +7,6 @@
 }
 
 body {
-  background-color: #e5e5e5;
   font-family: Roboto;
 }
 
@@ -561,7 +560,6 @@ ul {
   .feature__group-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
   }
 }
 
@@ -641,8 +639,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .activity {
-    display: initial;
-    background: #ffffff;
+    display: flex;
+    background-color: #ffffff;
     padding-bottom: 94px;
   }
 }
@@ -751,6 +749,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .clients__item:not(:last-child) {
+    margin-bottom: 30px;
     margin-right: 30px;
   }
 }
@@ -952,9 +951,6 @@ ul {
   width: 450px;
   height: 404px;
   border: 1px solid #eeeeee;
-}
-
-.work__item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
@@ -969,21 +965,34 @@ ul {
 @media screen and (min-width: 768px) {
   .work__item {
     width: 354px;
+    height: 440px;
+  }
+  .work__item:not(:nth-child(2n + 2)) {
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .work__item {
     width: 370px;
+    height: 404px;
+  }
+  .work__item:not(:nth-child(2n + 2)) {
+    margin-right: 0;
   }
   .work__item:not(:nth-child(3n + 3)) {
     margin-right: 30px;
   }
 }
 
+.portfolio__img {
+  height: 294px;
+}
+
 .work__item-wrap {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .work__img-text {

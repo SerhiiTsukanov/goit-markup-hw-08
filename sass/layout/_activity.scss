@@ -1,8 +1,8 @@
 .activity {
   display: none;
   @media screen and (min-width: 1200px) {
-    display: initial;
-    background: #ffffff;
+    display: flex;
+    background-color: #ffffff;
     padding-bottom: 94px;
   }
 }
