@@ -179,10 +179,14 @@
   }
 }
 
+// -----------------------------------MOB-MENU-------------------------------
+
 .mob-menu {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
+  width: 100vw;
+  
   // width: 480px;
   // height: 796px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -192,7 +196,7 @@
   left: 0px;
   top: 0px;
   width: 100vw;
-  height: 100vw;
+  height: 100%;
   padding-bottom: 48px;
   padding-top: 21px;
   padding-left: 40px;

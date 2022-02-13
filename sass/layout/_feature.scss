@@ -24,6 +24,10 @@
 
 .feature__group-item {
   width: 450px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
     &:not(:nth-child(2n + 2)) {
@@ -32,8 +36,10 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }
